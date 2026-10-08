@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quiz-platform-assignment3"
+version = "0.1.0"
+
+[project.optional-dependencies]
+dev = [
+    "coverage==7.10.1",
+    "pytest==8.4.1",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
